@@ -1,0 +1,101 @@
+{
+    "comment": "Input template",
+    "label": "exp00",
+    "laser_setup": {
+        "wavelength": 975,
+        "mode": "log",
+        "range": [
+            0.0001,
+            10000
+        ],
+        "number_of_power_points": 100,
+        "t0": 0,
+        "dt_per_step": 0.004,
+        "dt_per_data_point": 4e-06
+    },
+    "sample": {
+        "absorber": { 
+            "init_conds": {
+                "Na": {
+                    "about": "Na at t0",
+                    "value": 1.52e+21,
+                    "unit": "cm^{-3}"
+                },
+                "Nb": {
+                    "about": "Nb at t0",
+                    "value": 0,
+                    "unit": "cm^{-3}"
+                },
+                "Nd": {
+                    "about": "Yb surface defects population",
+                    "value": 0,
+                    "unit": "cm^{-3}"
+                }
+            },
+            "props": {
+                "sigma": {
+                    "about": "absorption cross-section Yb",
+                    "value": 1.69e-20,
+                    "unit": "cm^2"
+                },
+                "taub": {
+                    "about": "radiative lifetime of Yb^(3+) ions from b to a",
+                    "value": 0.00132,
+                    "unit": "s"
+                },
+                "Wd": {
+                    "about": "energy transfer upconversion rate - defect state",
+                    "value": 0,
+                    "unit": "cm^3/s"
+                
+                }
+            }
+        },
+        "emitter": {
+            "init_conds": {
+                "N0": {
+                    "about": "N0 at t0",
+                    "value": 1.25e+19,
+                    "unit": "cm^{-3}"
+                },
+                "N1": {
+                    "about": "N1 at t0",
+                    "value": 0,
+                    "unit": "cm^{-3}"
+                },
+                "N2": {
+                    "about": "N2 at t0",
+                    "value": 0,
+                    "unit": "cm^{-3}"
+                }
+            },
+            "props": {
+                "tau1": {
+                    "about": "radiative lifetime of Tm^(3+) state 1",
+                    "value": 0.00743,
+                    "unit": "s"
+                },
+                "tau2": {
+                    "about": "radiative lifetime of Tm^(3+) state 2",
+                    "value": 0.00149,
+                    "unit": "s"
+                },
+                "W0": {
+                    "about": "energy transfer upconversion rate state 0",
+                    "value": 1.6e-18,
+                    "unit": "cm^3/s"
+                },
+                "W1": {
+                    "about": "energy transfer upconversion rate state 1",
+                    "value": 6.2e-16,
+                    "unit": "cm^3/s"
+                },
+                "W2": {
+                    "about": "energy transfer upconversion rate state 2",
+                    "value": 0,
+                    "unit": "cm^3/s"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+arquive/*
+output/*
+__pycache__/
+*.ipynb
