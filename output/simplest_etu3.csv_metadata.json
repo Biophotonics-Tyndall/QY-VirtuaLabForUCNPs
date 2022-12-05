@@ -1,0 +1,36 @@
+{
+    "exp_name": "Tm-Yb ETU3",
+    "data_file": "simplest_etu3.csv.csv",
+    "laser_props": {
+        "wavelength": 9.76e-07,
+        "mode": "pulse",
+        "range": [
+            0.0,
+            1,
+            2
+        ],
+        "samplingPerStep": 100,
+        "samplingRate": 100000.0
+    },
+    "sample_props": {
+        "N_sens": 1.52e+21,
+        "N_act": 1.25e+19,
+        "W_0": 1.6e-18,
+        "W_1": 6.2e-16,
+        "W_2": 1.52e-16,
+        "R_{ba}": 757.5757575757576,
+        "R_{10}": 17241.379310344826,
+        "R_{20}": 99999.99999999999,
+        "R_30": 1481.4814814814813,
+        "sigma_ab": 1.69e-20,
+        "h": 6.62607015e-34,
+        "nu": 307164403688524.56
+    },
+    "rate_equations": [
+        "\\frac{d}{d t} \\operatorname{N_{b}}{\\left(t \\right)} = - R_{ba} \\operatorname{N_{b}}{\\left(t \\right)} + \\frac{\\rho \\sigma_{ab} \\left(N_{sens} - \\operatorname{N_{b}}{\\left(t \\right)}\\right)}{h \\nu}",
+        "\\frac{d}{d t} \\operatorname{N_{0}}{\\left(t \\right)} = R_{30} \\operatorname{N_{3}}{\\left(t \\right)} + R_{10} \\operatorname{N_{1}}{\\left(t \\right)} + R_{20} \\operatorname{N_{2}}{\\left(t \\right)} - W_{0} \\operatorname{N_{0}}{\\left(t \\right)} \\operatorname{N_{b}}{\\left(t \\right)}",
+        "\\frac{d}{d t} \\operatorname{N_{1}}{\\left(t \\right)} = - R_{10} \\operatorname{N_{1}}{\\left(t \\right)} + W_{0} \\operatorname{N_{0}}{\\left(t \\right)} \\operatorname{N_{b}}{\\left(t \\right)} - W_{1} \\operatorname{N_{1}}{\\left(t \\right)} \\operatorname{N_{b}}{\\left(t \\right)}",
+        "\\frac{d}{d t} \\operatorname{N_{2}}{\\left(t \\right)} = - R_{20} \\operatorname{N_{2}}{\\left(t \\right)} + W_{1} \\operatorname{N_{1}}{\\left(t \\right)} \\operatorname{N_{b}}{\\left(t \\right)} - W_{2} \\operatorname{N_{2}}{\\left(t \\right)} \\operatorname{N_{b}}{\\left(t \\right)}",
+        "\\frac{d}{d t} \\operatorname{N_{3}}{\\left(t \\right)} = - R_{30} \\operatorname{N_{3}}{\\left(t \\right)} + W_{2} \\operatorname{N_{2}}{\\left(t \\right)} \\operatorname{N_{b}}{\\left(t \\right)}"
+    ]
+}

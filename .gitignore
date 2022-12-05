@@ -1,0 +1,12 @@
+# env
+\symvenv
+\__pycache__
+\.vscode
+\archive
+\.ipynb_checkpoints
+
+# data
+*.csv
+
+# plots
+*.png
